@@ -1,0 +1,12 @@
+Pokretanje u XAMPP-u
+
+1. Kopirajte cijelu mapu `el_confidencial_projekt` u XAMPP mapu `htdocs`.
+2. Pokrenite module **Apache** i **MySQL** u XAMPP Control Panelu.
+3. Otvorite `http://localhost/phpmyadmin`.
+4. Odaberite **Import** i uvezite `database/el_confidencial.sql`.
+5. Otvorite `http://localhost/el_confidencial_projekt/`.
+
+Demo korisnici
+
+- Administrator: korisničko ime `administrator`, lozinka `admin123`
+- Obični korisnik: korisničko ime `korisnik`, lozinka `korisnik123`

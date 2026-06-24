@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unos vijesti - faza II</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="brand"><a href="index.html"><span class="brand-name">El Confidencial</span><span class="brand-tagline">El diario de los lectores influyentes</span></a></div>
+  <nav class="main-nav" aria-label="Glavna navigacija"><div class="nav-inner"><a href="index.html">Home</a><a href="index.html#europa">Europa</a><a href="index.html#teknautas">Teknautas</a><a href="unos.html" aria-current="page">Unos</a><a href="administrator.php">Administracija</a></div></nav>
+</header>
+<main class="page-content form-page"><div class="container">
+  <h1 class="page-heading">Unos nove vijesti</h1>
+  <form class="form-card form-grid" name="unos-vijesti" action="skripta.php" method="POST" enctype="multipart/form-data" data-news-form>
+    <p class="error-text" data-form-status aria-live="polite"></p>
+    <div class="form-item"><label for="title">Naslov vijesti</label><input id="title" name="title" type="text" maxlength="180" required autofocus></div>
+    <div class="form-item"><label for="about">Kratki sadržaj vijesti</label><textarea id="about" name="about" maxlength="500" required></textarea></div>
+    <div class="form-item"><label for="content">Sadržaj vijesti</label><textarea id="content" name="content" required></textarea></div>
+    <div class="form-item"><label for="category">Kategorija vijesti</label><select id="category" name="category" required><option value="europa">Europa</option><option value="teknautas">Teknautas</option></select></div>
+    <div class="form-item"><label for="pphoto">Slika</label><input id="pphoto" name="pphoto" type="file" accept="image/jpeg,image/png,image/gif,image/webp" required></div>
+    <div class="checkbox-row"><input id="archive" name="archive" type="checkbox" value="1"><label for="archive">Spremiti u arhivu</label></div>
+    <div class="form-actions"><button class="btn btn-secondary" type="reset">Poništi</button><button class="btn" type="submit">Prihvati</button></div>
+  </form>
+</div></main>
+<footer class="site-footer"><div class="footer-inner"><div>© Tin Frühwirth, <a href="mailto:tfruhwirt@tvz.hr">tfruhwirt@tvz.hr</a>, 2026.</div></div></footer>
+</body>
+</html>
