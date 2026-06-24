@@ -10,3 +10,6 @@ Demo korisnici
 
 - Administrator: korisničko ime `administrator`, lozinka `admin123`
 - Obični korisnik: korisničko ime `korisnik`, lozinka `korisnik123`
+
+
+Demo video link: https://youtu.be/mTwuoR7DjnE
